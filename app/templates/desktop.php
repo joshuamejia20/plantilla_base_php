@@ -1,10 +1,17 @@
+<?php
+  if(!isset($_SESSION['vehiculos'])){
+    header('Cache-control: no-cache; must-revalidate');
+    header('location: ?mod=login');
+  }
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>Inges</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"

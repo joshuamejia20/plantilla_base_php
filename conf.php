@@ -8,6 +8,11 @@ define('LAYOUT_PATH', realpath('app/templates'));
 
 $conf['login'] = array(
     'archivo'=>'login.html',
+    'layout'=>LAYOUT_LOGIN
+);
+
+$conf['inicio'] = array(
+    'archivo'=>'inicio.html',
     'layout'=>LAYOUT_DESKTOP
 );
 
