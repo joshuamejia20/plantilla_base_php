@@ -16,7 +16,7 @@ function iniciar_sesion(){
     }) // datos enviados al servidor
     .done(function (response){
         if(response.success){
-            location.href="?mod=inicio";
+            location.href=response.url;
         }else{
             //console.error(response.error);
             Swal.fire({

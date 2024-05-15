@@ -31,6 +31,8 @@
   <script src="resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- AdminLTE App -->
   <script src="resources/dist/js/adminlte.min.js"></script>
+  <!--sweetalert-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   
 </body>
 

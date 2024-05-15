@@ -54,6 +54,11 @@
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
       </ul>
+      <div style="width: 100%;">
+        <button type="button" class="btn btn-danger float-right" id="btn_offline">
+          <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+        </button>
+      </div>
     </nav>
     <!-- /.navbar -->
 
@@ -74,7 +79,11 @@
             <img src="resources/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="#" class="d-block">Josué Mejía</a>
+            <a href="#" class="d-block">
+              <?php
+                echo $_SESSION['vehiculos_usuario'];
+              ?>
+            </a>
           </div>
         </div>
 
@@ -160,6 +169,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <!--<script src="resources/dist/js/pages/dashboard.js"></script>-->
+  <script src="resources/dist/js/general.js"></script>
 </body>
 
 </html>
