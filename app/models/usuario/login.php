@@ -53,6 +53,10 @@ try{
         $_SESSION['vehiculos_id_rol'] = $datosUsuario['id_rol'];
         $_SESSION['vehiculos_rol'] = $datosUsuario['rol'];
 
+        $sql ="INSERT INTO bitacora(fecha, accion, tabla, id_afectado, id_usuario)
+        VALUES(NOW(), 1, 'no aplica', 0, '$_SESSION[vehiculos_id_usuario]')";
+        $resultado = mysqli_query($con, $sql);
+
         $response = array('success'=>true, 'url'=>"?mod=inicio");
         
 
