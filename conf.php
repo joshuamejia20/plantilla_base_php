@@ -21,6 +21,11 @@ $conf['vehiculos'] = array(
     'layout'=>LAYOUT_DESKTOP
 );
 
+$conf['usuarios'] = array(
+    'archivo'=>'usuarios.html',
+    'layout'=>LAYOUT_DESKTOP
+);
+
 $conf['tamales'] = array(
     'archivo'=>'vehiculos.html',
     'layout'=>LAYOUT_DESKTOP

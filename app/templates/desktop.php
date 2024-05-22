@@ -1,8 +1,8 @@
 <?php
-  if(!isset($_SESSION['vehiculos'])){
-    header('Cache-control: no-cache; must-revalidate');
-    header('location: ?mod=login');
-  }
+if (!isset($_SESSION['vehiculos'])) {
+  header('Cache-control: no-cache; must-revalidate');
+  header('location: ?mod=login');
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,8 +14,7 @@
   <title>Inges</title>
 
   <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
@@ -34,8 +33,9 @@
   <link rel="stylesheet" href="resources/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="resources/plugins/summernote/summernote-bs4.min.css">
-    <!-- jQuery -->
-    <script src="resources/plugins/jquery/jquery.min.js"></script>
+  <!-- jQuery -->
+  <script src="resources/plugins/jquery/jquery.min.js"></script>
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -66,8 +66,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="index3.html" class="brand-link">
-        <img src="resources/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-          style="opacity: .8">
+        <img src="resources/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">Inges</span>
       </a>
 
@@ -81,7 +80,7 @@
           <div class="info">
             <a href="#" class="d-block">
               <?php
-                echo $_SESSION['vehiculos_usuario'];
+              echo $_SESSION['vehiculos_usuario'];
               ?>
             </a>
           </div>
@@ -95,6 +94,14 @@
                 <i class="nav-icon fas fa-car"></i>
                 <p>
                   Vehiculos
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="?mod=usuarios" class="nav-link">
+                <i class="nav-icon fas fa-users"></i>
+                <p>
+                  Usuarios
                 </p>
               </a>
             </li>
@@ -117,7 +124,7 @@
     <div class="content-wrapper">
       <div class="m-3">
         <?php
-          @include(MODULO_PATH . "/". $conf[$modulo]['archivo']);
+        @include(MODULO_PATH . "/" . $conf[$modulo]['archivo']);
         ?>
       </div>
     </div>
@@ -149,7 +156,7 @@
   <script src="resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- ChartJS -->
   <script src="resources/plugins/chart.js/Chart.min.js"></script>
-  
+
   <!-- jQuery Knob Chart -->
   <script src="resources/plugins/jquery-knob/jquery.knob.min.js"></script>
   <!-- daterangepicker -->
@@ -167,8 +174,15 @@
   <script src="resources/dist/js/demo.js"></script>
   <!--sweetalert-->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- DataTable -->
+  <link rel="stylesheet" type="text/css" href="resources/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" type="text/css" href="resources/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <script type="text/javascript" src="resources/plugins/datatables/jquery.dataTables.js"></script>
+  <script type="text/javascript" src="resources/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script type="text/javascript" src="resources/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script type="text/javascript" src="resources/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-  <!--<script src="resources/dist/js/pages/dashboard.js"></script>-->
+  <!--<script src="resources/plugins/dist/js/pages/dashboard.js"></script>-->
   <script src="resources/dist/js/general.js"></script>
 </body>
 
