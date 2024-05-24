@@ -181,6 +181,13 @@ if (!isset($_SESSION['vehiculos'])) {
   <script type="text/javascript" src="resources/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
   <script type="text/javascript" src="resources/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
   <script type="text/javascript" src="resources/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+
+  <!-- Select2 -->
+  <link rel="stylesheet" href="resources/plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="resources/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <script type="text/javascript" src="resources/plugins/select2/js/select2.full.min.js"></script>
+  <script type="text/javascript" src="resources/plugins/select2/js/i18n/es.js"></script>
+
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <!--<script src="resources/plugins/dist/js/pages/dashboard.js"></script>-->
   <script src="resources/dist/js/general.js"></script>
