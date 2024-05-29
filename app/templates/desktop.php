@@ -187,6 +187,10 @@ if (!isset($_SESSION['vehiculos'])) {
   <link rel="stylesheet" href="resources/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
   <script type="text/javascript" src="resources/plugins/select2/js/select2.full.min.js"></script>
   <script type="text/javascript" src="resources/plugins/select2/js/i18n/es.js"></script>
+  <!--jquery validate-->
+  <script type="text/javascript" src="resources/plugins/jquery-validation/jquery.validate.js"></script>
+  <script type="text/javascript" src="resources/plugins/jquery-validation/additional-methods.js"></script>
+  <script type="text/javascript" src="resources/plugins/jquery-validation/localization/messages_es.js"></script>
 
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <!--<script src="resources/plugins/dist/js/pages/dashboard.js"></script>-->

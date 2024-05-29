@@ -3,16 +3,15 @@
 require '../sql/conexion.php';
 
 $params = array();
-$params['completo'] = $_POST['datos'];
+$params = $_POST['form'];
 session_start();
 
-$campos = explode("&", $_POST['datos']);
+/*$campos = explode("&", $_POST['datos']);
 
 foreach ($campos as $value) {
     $dato = explode('=', $value);
     $params[$dato[0]] = $dato[1];
-}
-
+}*/
 try{
 
     if(isset($params['id_no_normalizada']) && $params['id_no_normalizada']==""){
