@@ -179,7 +179,8 @@ function imprimir_pdf(){
     }) // datos enviados al servidor
     .done(function (response){
         if(response.success){
-            
+            //window.open(response.url, '_blank')
+            abrir_documento(response.url);
         }else{
             //console.error(response.error);
             Swal.fire({
@@ -197,4 +198,11 @@ function imprimir_pdf(){
     .fail(function(jqXHR, textStatus, errorThrown){
         console.log("Error al realizar la solicitud: "+ textStatus, errorThrown);
     })
+}
+
+function abrir_documento(url){
+    $("#para_documento").html(
+        "<iframe src="+url+"#zoom=70"+" style='width: 765px; height: 800px;'></iframe>"
+    );
+    $("#mdl_doc").modal('show');
 }
